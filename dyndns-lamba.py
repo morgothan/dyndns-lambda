@@ -127,7 +127,7 @@ def run_set_mode(set_hostname, validation_hash, source_ip):
     # If they do match, get the current ip address associated with
     # the hostname DNS record from Route 53.
     else:
-        if (set_hostname == 'www.hnc.link.' or set_hostname == 'dns.hnc.link.'):
+        if (set_hostname == 'bad.host.name1.' or set_hostname == 'bad.host.name2.'):
             return_status = 'fail'
             return_message = 'you cheeky bastard'
             return {'return_status': return_status,
